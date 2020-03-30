@@ -1,0 +1,98 @@
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: "Ubuntu";
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FF5722;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300vh;
+    justify-content: flex-end;
+}
+
+p {
+    margin: 0px;
+}
+
+.side-navigation-menu {
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+}
+
+.side-menu-item {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.page-container {
+    width: 75%;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-profile {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#education-details {
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+
+#work-details {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+#profile-container {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 7.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#name {
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
+
+#about-me {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
