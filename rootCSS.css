@@ -27,6 +27,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     position: fixed;
     left: 0;
 }
@@ -40,14 +41,13 @@ p {
 
 .page-container {
     width: 75%;
-    height: 300vh;
     display: flex;
     flex-direction: column;
 }
 
 #my-profile {
-    width: 100%;
     height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -55,15 +55,25 @@ p {
 }
 
 #education-details {
-    width: 100%;
-    height: 100vh;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
 }
 
 #work-details {
-    width: 100%;
-    height: 100vh;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #profile-container {
@@ -95,4 +105,26 @@ p {
     font-size: 2.5rem;
     font-weight: 500;
 
+}
+
+#education-graduation {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-heading {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-sub-container-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
 }
