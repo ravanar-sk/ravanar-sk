@@ -14,18 +14,27 @@
     <!-- Side Navigation -->
     <div class="side-navigation-menu">
 
-        <a href="#my-profile">
-            <p class="side-menu-item">ME</p>
-        </a>
-        <a href="#education-details">
-            <p class="side-menu-item">EDUCATION DETAILS</p>
-        </a>
-        <a href="#work-details">
-            <p class="side-menu-item">WORK DETAILS</p>
-        </a>
-        <a href="#hobbies">
-            <p class="side-menu-item">HOBBIES</p>
-        </a>
+        <div class="side-menu-item">
+            <a href="#my-profile">
+                <img class="side-menu-item-icon" src="./assets/images/icons/iconUser.png" />
+            </a>
+        </div>
+
+        <div class="side-menu-item">
+            <a href="#education-details">
+                <img class="side-menu-item-icon" src="./assets/images/icons/iconEducation.png" />
+            </a>
+        </div>
+        <div class="side-menu-item">
+            <a href="#work-details">
+                <img class="side-menu-item-icon" src="./assets/images/icons/iconWork.png" />
+            </a>
+        </div>
+        <div class="side-menu-item">
+            <a href="#hobbies">
+                <img class="side-menu-item-icon" src="./assets/images/icons/iconHobbies.png" />
+            </a>
+        </div>
 
     </div>
 
@@ -35,10 +44,13 @@
 
         <!-- Profile Container -->
         <div id="my-profile">
-            <div id="profile-container">
-                <img id="profile-picture" src="./assets/images/my_profile_pic.jpg" />
+
+            <div
+                style=" width: 100%;  height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; opacity: 0.5;">
+                <img style="width: 100%; height: 100%; object-fit: cover;" src="./assets/images/pictures/imgPic3.jpg" />
             </div>
 
+            <h1>Hey there...</h1>
             <p id="name">SARAVANA KUMAR K R</p>
             <p id="about-me">Mobile application developer with 4y 9m experience</p>
         </div>
@@ -304,9 +316,6 @@
             <ul>
                 <li>
                     <h1>Cycling</h1>
-                </li>
-                <li>
-                    <h1>Reading Quora</h1>
                 </li>
             </ul>
 
