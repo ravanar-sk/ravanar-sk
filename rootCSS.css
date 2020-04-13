@@ -85,13 +85,14 @@ p {
 #name {
     font-size: 3.5rem;
     font-weight: 600;
-
+    text-align: center;
 }
 
 #about-me {
     font-size: 2.5rem;
     font-weight: 500;
     color: #000000AA;
+    text-align: center;
 
 }
 
@@ -138,4 +139,17 @@ p {
 .work-details-duration {
     color: #00000099;
     font-style: italic;
+}
+
+.projects-text {
+    font-weight: 400;
+}
+
+.hobbies-title {
+    color: #00000099;
+}
+
+.hobbies-description {
+    color: #00000099;
+    font-weight: 400;
 }
