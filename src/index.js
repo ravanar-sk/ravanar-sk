@@ -7,6 +7,8 @@ import Work from "./pages/work";
 import Hobbies from "./pages/hobbies";
 import Navigation from "./navigation";
 
+import './app.css';
+
 function App(props){
 	const homeRef = useRef(null);
 	const eduRef = useRef(null);
@@ -36,7 +38,7 @@ function App(props){
 		}
 	}
 	return (
-		<div>
+		<>
 			<Navigation onChange={navClickHandler}/>
 			<div className="page-container">
 				<div ref={homeRef}><Home/></div>
@@ -44,7 +46,7 @@ function App(props){
 				<div ref={workRef}><Work/></div>
 				<div ref={hobbiesRef}><Hobbies/></div>
 			</div>
-		</div>
+		</>
 	)
 }
 
