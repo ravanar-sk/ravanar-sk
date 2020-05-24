@@ -4,7 +4,8 @@
   "description": "personal porfolio",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --progress --config webpack.config.js --open"
+    "start": "./node_modules/.bin/webpack-dev-server --progress --config webpack.config.js --open",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
