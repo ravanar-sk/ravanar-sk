@@ -1,0 +1,22 @@
+.side-navigation-menu {
+    width: 7%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+}
+
+.side-menu-item {
+    width: 60%;
+    aspect-ratio: 1;
+}
+
+.side-menu-item-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
