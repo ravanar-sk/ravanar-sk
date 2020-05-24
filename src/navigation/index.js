@@ -2,21 +2,34 @@ import React from "react";
 import './style.css';
 
 export default function Navigation(props){
+	const {onChange} = props;
+	
+	function clickHandler(event){
+		event.preventDefault();
+		onChange(event.currentTarget.name);
+	}
+	
 	return (
 		<div className="side-navigation-menu">
 			<div className="side-menu-item">
-				<a href="#my-profile"> <img className="side-menu-item-icon" src="assets/images/icons/iconUser.png" /></a>
+				<a name='home' onClick={clickHandler}>
+					<img className="side-menu-item-icon" src="assets/images/icons/iconUser.png" />
+				</a>
 			</div>
 			<div className="side-menu-item">
-				<a href="#education-details">
+				<a name='education' onClick={clickHandler}>
 					<img className="side-menu-item-icon" src="assets/images/icons/iconEducation.png" />
 				</a>
 			</div>
 			<div className="side-menu-item">
-				<a href="#work-details"><img className="side-menu-item-icon" src="assets/images/icons/iconWork.png" /></a>
+				<a name='work' onClick={clickHandler}>
+					<img className="side-menu-item-icon" src="assets/images/icons/iconWork.png" />
+				</a>
 			</div>
 			<div className="side-menu-item">
-				<a href="#hobbies"><img className="side-menu-item-icon" src="assets/images/icons/iconHobbies.png" /></a>
+				<a name='hobbies' onClick={clickHandler}>
+					<img className="side-menu-item-icon" src="assets/images/icons/iconHobbies.png" />
+				</a>
 			</div>
 		</div>
 	)

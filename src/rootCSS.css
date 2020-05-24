@@ -40,3 +40,7 @@ a:focus,
 a:active {
     text-decoration: none;
 }
+
+a:hover {
+    cursor: pointer;
+}
