@@ -1,0 +1,16 @@
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 50px;
+}
+
+.hobbies-title {
+    color: #00000099;
+}
+
+.hobbies-description {
+    color: #00000099;
+    font-weight: 400;
+}

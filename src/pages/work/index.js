@@ -1,8 +1,9 @@
 import React from "react";
+import './style.css';
 
 export default function Work(props){
 	return (
-		<div id="work-details">
+		<div className="work-details">
 			<h1 className=" main-heading">Work Details:</h1>
 			<div>
 				<a href="https://www.experionglobal.com/" target="_blank">

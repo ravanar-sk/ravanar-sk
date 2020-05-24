@@ -48,110 +48,12 @@ p {
     flex-direction: column;
 }
 
-#my-profile {
-    height: 100vh;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-}
-
-#education-details {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
-#work-details {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
-#hobbies {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
-#name {
-    font-size: 3.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-#about-me {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #000000AA;
-    text-align: center;
-
-}
-
-#education-graduation {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.section-heading {}
-
-.projects-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.projects-sub-container-right {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2vw;
-}
-
 .main-heading {
     color: #000000CC;
     font-size: 3rem;
     font-weight: 600;
     text-decoration: underline;
     text-align: center;
-}
-
-.education-sub-heading {
-    color: #00000099;
-}
-
-.education-description {
-    color: #00000099;
-    font-weight: 400;
-}
-
-.work-details-sub-heading {
-    color: #00000099;
-}
-
-.work-details-duration {
-    color: #00000099;
-    font-style: italic;
-}
-
-.projects-text {
-    font-weight: 400;
-}
-
-.hobbies-title {
-    color: #00000099;
-}
-
-.hobbies-description {
-    color: #00000099;
-    font-weight: 400;
 }
 
 a:link,

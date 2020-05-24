@@ -1,0 +1,31 @@
+.work-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 50px;
+}
+
+.work-details-sub-heading {
+    color: #00000099;
+}
+
+.work-details-duration {
+    color: #00000099;
+    font-style: italic;
+}
+
+.projects-text {
+    font-weight: 400;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-sub-container-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}

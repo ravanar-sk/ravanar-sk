@@ -1,0 +1,16 @@
+.education-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 50px;
+}
+
+.education-sub-heading {
+    color: #00000099;
+}
+
+.education-description {
+    color: #00000099;
+    font-weight: 400;
+}

@@ -1,8 +1,9 @@
 import React from "react";
+import './style.css';
 
 export default function Education(props){
 	return (
-		<div id="education-details">
+		<div className="education-details">
 			<h1 className=" main-heading">Education Details:</h1>
 			<div>
 				<h1 className="education-sub-heading">B.Tech - Computer Science - from Kerala University</h1>
