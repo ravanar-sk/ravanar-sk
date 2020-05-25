@@ -3,12 +3,12 @@ const path = require("path");
 
 const config = {
 	mode: 'development',
-	entry: './index.js',
+	entry: './src/index.js',
 	output: {
 		path: __dirname,
 		filename: "bundle.js"
 	},
-	context: path.join(__dirname, "./src/"),
+	context: __dirname,
 	module: {
 		rules: [
 			{
@@ -29,7 +29,7 @@ const config = {
 	],
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: './src',
+		contentBase: './',
 		hot: true,
 		compress: true,
 		port: 3001

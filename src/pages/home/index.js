@@ -4,13 +4,30 @@ import './style.css';
 export default function Home(props){
 	return (
 		<div className="my-profile">
-			<div style={{width: '100%', height: '100%', position: 'absolute', top: '0', left: '0', right: 0, bottom: 0, zIndex: -1, opacity: 0.5}}>
-				<img style={{width: '100%', height: '100%', objectFit: 'cover'}} src="assets/images/pictures/imgPic1.jpg" />
+			<div className='profile-background'>
+				<div className='profile-background-overlay'></div>
+				<img className='profile-background-image' src="assets/images/pictures/imgPic1.jpg" />
 			</div>
-			
-			<h1>Hey there...</h1>
-			<p className="name">SARAVANA KUMAR K R</p>
-			<p className="about-me">Mobile application developer</p>
+			<div className='profile-content'>
+				<p className="name">SARAVANA KUMAR K R</p>
+				<br/>
+				<p className="about-me">Mobile application developer</p>
+			</div>
+			<div className='profile-url'>
+				<div className='profile-url-icon'>
+					<a href='https://github.com/ravanar-sk' target='blank'>
+						<i className="fab fa-github-square"></i>
+					</a>
+				</div>
+				<div className='profile-url-icon'>
+					<a href='https://www.linkedin.com/in/ravanar/' target='blank'>
+						<i className="fab fa-linkedin"></i>
+					</a>
+				</div>
+				<div className='profile-url-icon'>
+					<i className="fab fa-facebook-square"></i>
+				</div>
+			</div>
 		</div>
 	)
 }
