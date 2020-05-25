@@ -41,7 +41,7 @@ function App(props){
 	}
 	return (
 		<>
-			<Navigation onChange={navClickHandler}/>
+			<Navigation className="navigation" onChange={navClickHandler}/>
 			<div className="page-container">
 				<div ref={homeRef}><Home/></div>
 				<div ref={eduRef}><Education/></div>

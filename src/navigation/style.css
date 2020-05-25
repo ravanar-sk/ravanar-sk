@@ -1,22 +1,17 @@
-.side-navigation-menu {
-    width: 7%;
+.side-menu-user {
+
 }
 
-.fixed-navigation-menu{
-    width: 7%;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: fixed;
-    left: 0;
+.side-menu-user-icon {
+    max-height: 4rem;
+    border-radius: 16px;
+    border: 2px solid white;
 }
 
 .side-menu-item {
-    width: 60%;
-    aspect-ratio: 1;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 8px;
 }
 
 .side-menu-item-icon {
