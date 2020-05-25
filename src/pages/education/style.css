@@ -1,16 +1,15 @@
-.education-details {
+.academics {
     display: flex;
     flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-.education-sub-heading {
-    color: #00000099;
+.education {
+    margin-top: 64px;
 }
 
-.education-description {
-    color: #00000099;
-    font-weight: 400;
+.education-location{
+    margin-top: 12px;
 }
+
