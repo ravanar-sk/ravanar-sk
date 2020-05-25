@@ -10,10 +10,7 @@
     flex-direction: column;
 }
 
-.main-heading {
-    color: #000000CC;
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: underline;
+.section-header {
     text-align: center;
+    color: #575757;
 }

@@ -46,11 +46,6 @@
     border: 2px solid #f1f1f1;
 }
 
-.greeting{
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-style: italic;
-}
 .name {
     font-size: 3rem;
     font-weight: 500;
@@ -75,5 +70,9 @@
 .profile-url-icon a{
     text-decoration: none;
     cursor: pointer;
+    color: white;
+}
+
+.profile-url-icon a i{
     color: white;
 }

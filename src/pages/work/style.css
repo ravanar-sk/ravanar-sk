@@ -1,31 +1,60 @@
-.work-details {
+.experience {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.company-header {
     display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:100%;
+    margin-top: 64px;
 }
 
-.work-details-sub-heading {
-    color: #00000099;
+.company-info{
+    display: flex;
+    align-items: center;
 }
 
-.work-details-duration {
-    color: #00000099;
+.company-title-location{
+    display: flex;
+    margin-top: 2px;
+}
+
+.company-duration{
     font-style: italic;
-}
-
-.projects-text {
-    font-weight: 400;
 }
 
 .projects-container {
     display: flex;
     flex-direction: row;
+    margin-top: 32px;
 }
 
-.projects-sub-container-right {
+.projects {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+}
+
+.project {
+    margin-bottom: 36px;
+}
+
+.project-title{
+    margin-bottom: 12px;
+ }
+
+.project-description{
+    font-size: 1.17em;
+    line-height: 1.32em;
+}
+
+.project-links{
+    margin-top: 8px;
+    display: flex;
+}
+
+.project-link{
+    margin-right: 12px;
 }

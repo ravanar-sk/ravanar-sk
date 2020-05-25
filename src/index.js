@@ -7,7 +7,9 @@ import Work from "./pages/work";
 import Hobbies from "./pages/hobbies";
 import Navigation from "./navigation";
 
+import './skin.css';
 import './app.css';
+
 
 function App(props){
 	const homeRef = useRef(null);
