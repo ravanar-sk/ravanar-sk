@@ -1,25 +1,24 @@
 import React from "react";
 import './style.css';
+import {academics} from './data';
 
 export default function Education(props){
+	const ui = academics.map((academicObj, index)=>{
+		const {degree, discipline, board, institution, location} = academicObj;
+		return (
+			<div className='education' key={index}>
+				<h2>{degree} - {discipline} - {board}</h2>
+				<div className='education-location'>
+					<h4>{institution}, {location}</h4>
+				</div>
+			</div>
+		)
+		
+	})
 	return (
-		<div className="education-details">
-			<h1 className=" main-heading">Education Details:</h1>
-			<div>
-				<h1 className="education-sub-heading">B.Tech - Computer Science - from Kerala University</h1>
-				<h2 className="education-description"> I studied at UKF College of Engineering and Technology affiliated to
-					Kerala University.</h2>
-			</div>
-			
-			<div>
-				<h1 className="education-sub-heading">12th - Science - Maths -Computer Science - CBSE</h1>
-				<h2 className="education-description"> I studied at Sree Narayana Trusts Central School, Kollam.</h2>
-			</div>
-			
-			<div>
-				<h1 className="education-sub-heading">10th - Science - Maths - CBSE</h1>
-				<h2 className="education-description"> I studied at Sree Narayana Trusts Central School, Kollam.</h2>
-			</div>
-		</div>
+		<section className="academics">
+			<h1 className='section-header'>Education Details</h1>
+			{ui}
+		</section>
 	)
 }

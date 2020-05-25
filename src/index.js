@@ -7,7 +7,9 @@ import Work from "./pages/work";
 import Hobbies from "./pages/hobbies";
 import Navigation from "./navigation";
 
+import './skin.css';
 import './app.css';
+
 
 function App(props){
 	const homeRef = useRef(null);
@@ -39,7 +41,7 @@ function App(props){
 	}
 	return (
 		<>
-			<Navigation onChange={navClickHandler}/>
+			<Navigation className="navigation" onChange={navClickHandler}/>
 			<div className="page-container">
 				<div ref={homeRef}><Home/></div>
 				<div ref={eduRef}><Education/></div>
