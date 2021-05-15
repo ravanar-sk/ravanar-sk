@@ -59,10 +59,12 @@ animation-duration: 300ms;
 
 @keyframes animation-side-menu-sub-title-font-scale-reverse {
     from {
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
+        color: white;
     }
     to {
         letter-spacing: normal;
+        color: #BBBBBB;
     }
 }
 
@@ -71,7 +73,7 @@ animation-duration: 300ms;
     margin-bottom: 10px;
     color: white;
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     animation-duration: 300ms;
     animation-name: animation-side-menu-sub-title-font-scale;
 }
@@ -79,9 +81,11 @@ animation-duration: 300ms;
 @keyframes animation-side-menu-sub-title-font-scale {
     from {
         letter-spacing: normal;
+        color: #BBBBBB;
     }
     to {
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
+        color: white;
     }
 }
 
@@ -95,17 +99,145 @@ animation-duration: 300ms;
     width: 71%;
     display: flex;
     flex-direction: column;
+    background-color: #0E0E0E;
+    /* background-color: white; */
 }
 
-#my-profile {
+.details-container {
     height: 100vh;
     min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#home-container {
+    display: flex;
+    align-items: center;
+}
+
+#profile-image-container {
+    display: flex; 
+    width: 30%; 
+    max-width: 30%;
+    aspect-ratio: 1; 
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#profile-image-bg-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: white; 
+    opacity: 0.1;
+}
+
+#profile-image-front-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: black; 
+    opacity: 0.1;
+}
+
+#profile-image {
+    width: 95%; 
+    height: 95%;
+    aspect-ratio: 1; 
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    object-fit: cover;
+}
+
+#name-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 5%;
+}
+
+#name {
+    font-size: 55px; 
+    font-weight: 800; 
+    font-family: "Montserrat"; 
+    color: white;
+    margin: 0;
+}
+
+#about-me {
+    font-family: Montserrat; 
+    font-style: italic;
+    font-weight: 500;
+    color: #ADADAD;
+    margin-top: 20px;
+}
+
+#about-me-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
-    position: relative;
 }
+
+.about-me-text-content {
+    color: #BBBBBB;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+
+    letter-spacing: normal;
+    animation-duration: 300ms;
+    animation-name: animation-about-me-text-content-reverse;
+}
+
+@keyframes animation-about-me-text-content-reverse {
+    from {
+        letter-spacing: 1.5px;
+        color: white;
+    }
+    to {
+        letter-spacing: normal;
+        color: #BBBBBB;
+    }
+}
+
+.about-me-text-content:hover {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+
+    letter-spacing: 1.5px;
+    animation-duration: 300ms;
+    animation-name: animation-about-me-text-content;
+}
+
+@keyframes animation-about-me-text-content {
+    from {
+        letter-spacing: normal;
+        color: #BBBBBB;
+        
+    }
+    to {
+        letter-spacing: 1.5px;
+        color: white;
+    }
+}
+
+
+
+
+
 
 #education-details {
     display: flex;
@@ -129,20 +261,6 @@ animation-duration: 300ms;
     padding-left: 5vw;
     padding-right: 5vw;
     margin-top: 50px;
-}
-
-#name {
-    font-size: 3.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-#about-me {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #000000AA;
-    text-align: center;
-
 }
 
 #education-graduation {

@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Saravana Kumar K R (RavaNar ~ Ghostly)</title>
+    <title>.:Saravana Kumar K R (RavaNar ~ Ghostly)</title>
     <link rel="stylesheet" type="text/css" href="./app/css/index.css">
     <link rel="stylesheet" type="text/css" href="./app/css/commonStyles.css">
     <!-- <link rel="stylesheet" type="text/css" href="./app/css/app-font.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:Italic">
 </head>
 
 <body>
@@ -16,17 +18,30 @@
     <div class="side-navigation-menu-container">
 
         <div class="side-navigation-menu">
-
+        
             <h1 class="side-menu-item side-menu-title">INDIA</h1>
-
-            <h3 class="side-menu-item side-menu-sub-title">HOME</h3>
-            <h3 class="side-menu-item side-menu-sub-title">ABOUT</h3>
-            <h3 class="side-menu-item side-menu-sub-title">Projects</h3>
-            <h3 class="side-menu-item side-menu-sub-title">Education</h3>
-            <h3 class="side-menu-item side-menu-sub-title">Work</h3>
-            <h3 class="side-menu-item side-menu-sub-title">Hobbies</h3>
-            <h3 class="side-menu-item side-menu-sub-title">Gallery</h3>
-            
+            <a href="#home-container">
+                <h3 class="side-menu-item side-menu-sub-title">HOME</h3>
+            </a>
+        
+            <a href="#about-me-container">
+                <h3 class="side-menu-item side-menu-sub-title">ABOUT</h3>
+            </a>
+            <a href="#projects-container">
+                <h3 class="side-menu-item side-menu-sub-title">Projects</h3>
+            </a>
+            <a href="#education-container">
+                <h3 class="side-menu-item side-menu-sub-title">Education</h3>
+            </a>
+            <a href="#work-container">
+                <h3 class="side-menu-item side-menu-sub-title">Work</h3>
+            </a>
+            <a href="#hobbies-container">
+                <h3 class="side-menu-item side-menu-sub-title">Hobbies</h3>
+            </a>
+            <a href="#gallery-container">
+                <h3 class="side-menu-item side-menu-sub-title">Gallery</h3>
+            </a>
             
         </div>
 
@@ -37,18 +52,52 @@
     <div class="page-container">
 
         <!-- Profile Container -->
-        <div id="my-profile">
+        <div id="home-container" class="details-container">
 
-            <div
-                style=" width: 100%;  height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; opacity: 0.5;">
-                <img style="width: 100%; height: 100%; object-fit: cover;"
-                    src="./app/resources/images/pictures/imgPic1.jpg" />
+            <div id="profile-image-container">
+                <div id="profile-image-bg-layer"></div>
+                <img id="profile-image" src="./app/resources/images/pictures/imgPic1.jpg" />
+                <div id="profile-image-front-layer"></div>
             </div>
 
-            <h1>Hey there...</h1>
-            <p id="name">SARAVANA KUMAR K R</p>
-            <p id="about-me">Mobile application developer</p>
+            <div id="name-container" >
+                <h3 id="name">SARAVANA KUMAR K R</h3>
+                <p id="about-me">iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
+            </div>
+
+           
         </div>
+
+        <!-- About -->
+        <div id="about-me-container" class="details-container">
+            <!-- <div style="display: flex;">
+                <h4 class="about-me-text-content">&lt Experienced </h4>
+                <h4 class="about-me-text-content">iOS developer</h4>
+                <h4 class="about-me-text-content"> &gt</h4>
+            </div> -->
+            <h4 class="about-me-text-content">&lt Experienced iOS developer &gt</h4>
+            <h4 class="about-me-text-content">&lt Experienced React Native developer &gt</h4>
+            <h4 class="about-me-text-content">&lt Android Hobbyist &gt</h4>
+            <h4 class="about-me-text-content">&lt Web development newbie &gt</h4>
+            <h4 class="about-me-text-content">&lt Gamer &gt</h4>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects-container" class="details-container"></div>
+
+        <!-- education -->
+        <div id="education-container" class="details-container"></div>
+
+        <!-- work -->
+        <div id="work-container" class="details-container"></div>
+
+        <!-- Hobbies -->
+        <div id="hobbies-container" class="details-container"></div>
+
+        <!-- gallery -->
+        <div id="gallery-container" class="details-container"></div>
+
+
 
         <div id="education-details">
             <h1 class=" main-heading">Education Details:</h1>
