@@ -158,6 +158,21 @@ animation-duration: 300ms;
     z-index: 1;
 
     object-fit: cover;
+
+    /* animation-name: animation-profile-image-scale;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes animation-profile-image-scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.7);
+    }
 }
 
 #name-container {
