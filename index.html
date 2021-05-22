@@ -59,7 +59,7 @@
             <div id="profile-image-container">
                 <div id="profile-image-bg-layer"></div>
                 <dic id="home-profile-image-clip-container">
-                    <img id="profile-image" src="./app/resources/images/pictures/imgPic1.jpg" />
+                    <img id="profile-image" src="./app/resources/images/pictures/imgProfilePicture.jpg" />
                 </dic>
                 <!-- <div id="profile-image-front-layer"></div> -->
             </div>
@@ -67,86 +67,74 @@
             <div id="home-page-about-mename-container">
                 <h3 id="home-page-name">SARAVANA KUMAR K R</h3>
                 <div style="display: flex;">
-                    <p id="home-page-about-me" >iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
-                    <div style=" display: flex; width: 1px;  background-color: white; margin-left: 10px;"></div>
+                    <p id="home-page-about-me">iOS Developer | React Native Developer | Android Hobbyist | Freelancer
+                    </p>
+                    <div id="home-page-about-me-vertical-line"></div>
                 </div>
-                
             </div>
-
-
         </div>
 
         <!-- About -->
-        <div id="about-me-container" style="
-                                        min-height: 100vh;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: flex-start;
-                                        "
-                                        >
+        <div id="about-me-container">
 
-            <img id="img-about-me-profile-image" src="./app/resources/images/pictures/imgPic1.jpg" style="
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            overflow: hidden;
-            width: 90%;
-            margin-top: 10%;
-            "/>
+            <div id="about-me-image-list-container">
+                <div class="about-me-image-container">
+                    <img class="about-me-image-list-item" src="./app/resources/images/pictures/imgSubProfilePicture_02.jpg"/>
+                    <div class="about-me-image-overlay-container">
+                        <h2 class="about-me-image-overlay-text">Who I was!</h2>
+                    </div>
+                </div>
+                <div class="about-me-image-container" style="margin-left: 10px; margin-right: 10px;" >
+                    <img class="about-me-image-list-item" src="./app/resources/images/pictures/imgSubProfilePicture_01.jpg" />
+                    <div class="about-me-image-overlay-container">
+                        <h2 class="about-me-image-overlay-text">In a confused state?</h2>
+                    </div>
+                </div>
+                <div class="about-me-image-container">
+                    <img class="about-me-image-list-item" src="./app/resources/images/pictures/imgSubProfilePicture_03.jpg"/>
+                    <div class="about-me-image-overlay-container">
+                        <h2 class="about-me-image-overlay-text">What I am now.</h2>
+                    </div>
+                </div>
+            </div>
 
-            <dic style="display: flex;">
+            <dic style="display: flex;  width: 90%;">
 
                 <dic style="display: flex; flex-direction: column; flex: 1;">
-                    <h4 style="color: white;">SARAVANA KUMAR K R</h4>
-                    <p style="color: white;">iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
+                    <h1 id="about-me-name" style="color: white;">SARAVANA KUMAR K R</h1>
+                    <p id="about-me-description" style="color: white; opacity: 0.5;">
+                        Dummy
+                    </p>
                 </dic>
 
-                <dic style="display: flex; flex-direction: column; flex: 1;">
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
+                <dic style="display: flex; flex-direction: column; flex: 1; margin-left: 20px; margin-top: 30px;">
 
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
-                    <div style="display: flex;">
-                        <p style="color: white;">Birthday:</p>
-                        <p style="color: white;">05.12.1992</p>
-                    </div>
+                    <table>
+                        <tbody id="about-me-personal-details-table-body">
+                            <!-- All required data would be added dynamically -->
+                        </tbody>
+                    </table>
 
                 </dic>
 
             </dic>
-            
+
         </div>
 
         <!-- Projects -->
-        <div id="projects-container" class="details-container"></div>
+        <div id="projects-container" class="details-container" style="background-color: bisque;"></div>
 
         <!-- education -->
-        <div id="education-container" class="details-container"></div>
+        <div id="education-container" class="details-container" style="background-color: cornflowerblue;"></div>
 
         <!-- work -->
-        <div id="work-container" class="details-container"></div>
+        <div id="work-container" class="details-container" style="background-color: darkolivegreen;"></div>
 
         <!-- Hobbies -->
-        <div id="hobbies-container" class="details-container"></div>
+        <div id="hobbies-container" class="details-container" style="background-color: tomato;"></div>
 
         <!-- gallery -->
-        <div id="gallery-container" class="details-container"></div>
+        <div id="gallery-container" class="details-container" style="background-color: purple;"></div>
 
 
 
@@ -450,6 +438,8 @@
     </div>
     <script type="text/javascript" src="./app/resources/json/user-data.js"></script>
     <script src="./app/scripts/index.js"></script>
+    <script src="./app/scripts/home-page.js"></script>
+    <script src="./app/scripts/about-me-page.js"></script>
 </body>
 
 </html>

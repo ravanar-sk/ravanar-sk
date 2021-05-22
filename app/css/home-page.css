@@ -110,3 +110,9 @@
         max-width: 0%;
     }
 }
+
+#home-page-about-me-vertical-line {
+    display: flex; width: 1px;  
+    background-color: white; 
+    margin-left: 10px;
+}

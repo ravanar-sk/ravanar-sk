@@ -110,28 +110,6 @@ animation-duration: 300ms;
     padding-right: 5%;
 }
 
-
-
-
-
-#img-about-me-profile-image{
-}
-
-#about-me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
 #education-details {
     display: flex;
     flex-direction: column;

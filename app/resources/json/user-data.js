@@ -11,14 +11,81 @@ const userData = {
         "Web Hobbyist",
         "Freelancer"
     ],
-    "about_me": "I'm a Mobile Application Developer based out of Kerala, India. I am skilled in iOS, Android platform app developments with naive framework and with cross platform framework(React Native)",
-    "birthday": "05.12.1992",
-    "age": 31,
-    "address": "Kollam, Kerala, India - 691021",
-    "email": "saravanakumar0512@gmail.com",
+    "about_me": "I'm an enthusiastic and passionate mobile application developer. I build apps primarily for iOS platform using Xcode and if required would also build apps using React Native cross platform framework. I am also capable of building Android and web apps, however I do it as a hobby.",
+    "birthday": {
+        "title": "Birthday",
+        "value": "05-12-1992"
+    },
+    "age": {
+        "title": "Age",
+        "value": "28"
+    },
+    "address": {
+        "title": "Address",
+        "value": "Kollam, Kerala, India - 691021"
+    },
+    "email": {
+        "title": "Email",
+        "value": "saravanakumar0512@gmail.com"
+    },
+    "website": {
+        "title": "Website",
+        "value": "https://ravanar-sk.github.ios"
+    },
+    "github": {
+        "title": "Github",
+        "value": "https://github.com/ravanar-sk"
+    },
+    "stackoverflow": {
+        "title": "Stackoverflow",
+        "value": "28"
+    },
+    "linkedin": {
+        "title": "Linkedin",
+        "value": "28"
+    },
+    "instagram": {
+        "title": "Instagram",
+        "value": "28"
+    },
+    "facebook": {
+        "title": "Facebook",
+        "value": "28"
+    },
     "phone": [
-        "+918921234687",
-        "+919633519779"
+        {
+            "title": "Age",
+            "value": [
+                "+918921234687",
+                "+919633519779"
+            ]
+        },
     ],
-    "study": "Kerala University"
+    "education": [
+        {
+            "university": "Kerala University",
+            "institutionName": "UKF College of Engineering & Technology",
+            "startYear": "2010",
+            "endYear": "2014",
+            "graduationYear": "2014",
+            "marksWithUnit": "6.5 CGPA",
+        },
+        {
+            "university": "CBSE",
+            "institutionName": "SN Trusts Central School, Kollam",
+            "startYear": "1998",
+            "endYear": "2010",
+            "graduationYear": "2010",
+            "marksWithUnit": "67 %",
+        },
+        {
+            "university": "CBSE",
+            "institutionName": "SN Trusts Central School, Kollam",
+            "startYear": "1998",
+            "endYear": "2008",
+            "graduationYear": "2008",
+            "marksWithUnit": "77 %",
+        },
+    ]
+
 }
