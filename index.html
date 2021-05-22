@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>.:Saravana Kumar K R (RavaNar ~ Ghostly)</title>
     <link rel="stylesheet" type="text/css" href="./app/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/home-page.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/about-me-page.css">
     <link rel="stylesheet" type="text/css" href="./app/css/commonStyles.css">
     <!-- <link rel="stylesheet" type="text/css" href="./app/css/app-font.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
@@ -56,30 +58,79 @@
 
             <div id="profile-image-container">
                 <div id="profile-image-bg-layer"></div>
-                <img id="profile-image" src="./app/resources/images/pictures/imgPic1.jpg" />
-                <div id="profile-image-front-layer"></div>
+                <dic id="home-profile-image-clip-container">
+                    <img id="profile-image" src="./app/resources/images/pictures/imgPic1.jpg" />
+                </dic>
+                <!-- <div id="profile-image-front-layer"></div> -->
             </div>
 
-            <div id="name-container">
-                <h3 id="name">SARAVANA KUMAR K R</h3>
-                <p id="about-me">iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
+            <div id="home-page-about-mename-container">
+                <h3 id="home-page-name">SARAVANA KUMAR K R</h3>
+                <div style="display: flex;">
+                    <p id="home-page-about-me" >iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
+                    <div style=" display: flex; width: 1px;  background-color: white; margin-left: 10px;"></div>
+                </div>
+                
             </div>
 
 
         </div>
 
         <!-- About -->
-        <div id="about-me-container" class="details-container">
-            <!-- <div style="display: flex;">
-                <h4 class="about-me-text-content">&lt Experienced </h4>
-                <h4 class="about-me-text-content">iOS developer</h4>
-                <h4 class="about-me-text-content"> &gt</h4>
-            </div> -->
-            <h4 class="about-me-text-content">&lt Experienced iOS developer &gt</h4>
-            <h4 class="about-me-text-content">&lt Experienced React Native developer &gt</h4>
-            <h4 class="about-me-text-content">&lt Android Hobbyist &gt</h4>
-            <h4 class="about-me-text-content">&lt Web development newbie &gt</h4>
-            <h4 class="about-me-text-content">&lt Gamer &gt</h4>
+        <div id="about-me-container" style="
+                                        min-height: 100vh;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        "
+                                        >
+
+            <img id="img-about-me-profile-image" src="./app/resources/images/pictures/imgPic1.jpg" style="
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            overflow: hidden;
+            width: 90%;
+            margin-top: 10%;
+            "/>
+
+            <dic style="display: flex;">
+
+                <dic style="display: flex; flex-direction: column; flex: 1;">
+                    <h4 style="color: white;">SARAVANA KUMAR K R</h4>
+                    <p style="color: white;">iOS Developer | React Native Developer | Android Hobbyist | Freelancer</p>
+                </dic>
+
+                <dic style="display: flex; flex-direction: column; flex: 1;">
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color: white;">Birthday:</p>
+                        <p style="color: white;">05.12.1992</p>
+                    </div>
+
+                </dic>
+
+            </dic>
+            
         </div>
 
         <!-- Projects -->
@@ -397,8 +448,7 @@
 
 
     </div>
-
-
+    <script type="text/javascript" src="./app/resources/json/user-data.js"></script>
     <script src="./app/scripts/index.js"></script>
 </body>
 
