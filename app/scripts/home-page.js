@@ -15,7 +15,7 @@ homePageAboutMe.addEventListener('animationstart', (ev) => {
 homePageAboutMe.addEventListener('animationiteration', (ev) => {
     console.log("animation_iteration", ev);
     ++indexHomePageAboutMeAnimationStatus
-    if ((indexHomePageAboutMeAnimationStatus % 2) != 0) {
+    if ((indexHomePageAboutMeAnimationStatus % 2) === 1) {
         homePageAboutMe.innerHTML = userData.jobTitles[indexJobTitle % userData.jobTitles.length]
         ++indexJobTitle
     }
