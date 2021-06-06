@@ -25,15 +25,11 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
+            android: null,
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -45,15 +41,11 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
+            android:null,
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -65,15 +57,11 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
+            android: null,
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -85,15 +73,11 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
+            android: null,
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -111,9 +95,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -131,9 +113,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -151,9 +131,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
     {
@@ -171,9 +149,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
     {
@@ -191,9 +167,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
     {
@@ -211,9 +185,7 @@ const projects = [
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web: null
         }
     },
     {
@@ -225,12 +197,8 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
-            ios: {
-                url: "",
-            },
+            android:null,
+            ios:null,
             web: {
                 url: "",
             }
@@ -245,15 +213,11 @@ const projects = [
         projectData: {
             type: "mobile", // mobile/web
             isReactNative: false,
-            android: {
-                url: "",
-            },
+            android: null,
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
     {
@@ -264,16 +228,14 @@ const projects = [
         icon: "https://play-lh.googleusercontent.com/zyP9Ar7LzJkmbIa2VxP0wmJCv31upkEt-udljsKbamiAPpUpg8w3Wbv7CsE6my5wJA=s360-rw",
         projectData: {
             type: "mobile", // mobile/web
-            isReactNative: false,
+            isReactNative: true,
             android: {
                 url: "",
             },
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
     {
@@ -284,16 +246,14 @@ const projects = [
         icon: null,
         projectData: {
             type: "mobile", // mobile/web
-            isReactNative: false,
+            isReactNative: true,
             android: {
                 url: "",
             },
             ios: {
                 url: "",
             },
-            web: {
-                url: "",
-            }
+            web:null
         }
     },
 ]

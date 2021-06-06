@@ -102,7 +102,15 @@ function createProjectElement(projectData) {
         const divProjectTagsItem = document.createElement('img')
         divProjectTagsItem.className = "projects-tags-item"
         divProjectTagsItem.src = iconWeb
-        divProjectTagsRow.appendChild(divProjectTagsItem)
+
+        if (projectData.projectData.web.url.length > 0) {
+            const hyperTextElement = document.createElement('a')
+            hyperTextElement.href = projectData.projectData.web.url
+            hyperTextElement.appendChild(divProjectTagsItem)
+            divProjectTagsRow.appendChild(hyperTextElement)
+        } else {
+            divProjectTagsRow.appendChild(divProjectTagsItem)
+        }
     }
 
     
