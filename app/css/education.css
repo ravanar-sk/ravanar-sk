@@ -1,0 +1,129 @@
+.education-separator {
+    background-color: wheat;
+    height: 1px;
+    opacity: 0.3;
+}
+
+.education-details-container {
+    margin-left: 30px;
+}
+
+.education-text-content {
+    color: white;
+}
+
+/******************************/
+
+#education-container {
+    padding-top: 100px;
+}
+
+.education-item-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.education-item-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.education-item-graduation-year {
+    color: white;
+    flex: 0.15;
+    text-align: right;
+    margin: 0;
+    align-self: center;
+}
+
+.education-item-main-title {
+    color: white;
+    flex: 1;
+    margin: 0;
+    align-self: center;
+}
+
+.education-item-circle-indicator-container {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.education-item-circle-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: white;
+}
+
+.education-item-circle-bg-line {
+    position: absolute;
+    width: 1px;
+    z-index: 0;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.education-item-circle-bg-line-top-aligned {
+    height: 50%;
+    top: 0;
+}
+
+.education-item-circle-bg-line-bottom-aligned {
+    height: 50%;
+    bottom: 0;
+}
+
+.education-item-circle-bg-line-full-height {
+    height: 100%;
+    bottom: 0;
+    top: 0;
+}
+
+.education-item-sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.education-item-bg-line-container {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.education-item-bg-line {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    position: relative;
+}
+
+.education-item-sub-title {
+    color: white;
+    opacity: 0.5;
+    flex: 1;
+    margin: 0;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.education-item-sub-title-with-bottom-margin {
+    color: white;
+    opacity: 0.5;
+    flex: 1;
+    margin: 0;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+h2, h4 {
+    white-space: pre;
+}

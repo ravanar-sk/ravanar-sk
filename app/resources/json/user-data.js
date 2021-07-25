@@ -69,22 +69,25 @@ const userData = {
             "endYear": "2014",
             "graduationYear": "2014",
             "marksWithUnit": "6.5 CGPA",
+            "subjects":"Computer Science Engineering"
         },
         {
             "university": "CBSE",
-            "institutionName": "SN Trusts Central School, Kollam",
+            "institutionName": "SN Trusts Central School, Kollam (12th Grade)",
             "startYear": "1998",
             "endYear": "2010",
             "graduationYear": "2010",
             "marksWithUnit": "67 %",
+            "subjects":"Maths , ComputerScience"
         },
         {
             "university": "CBSE",
-            "institutionName": "SN Trusts Central School, Kollam",
+            "institutionName": "SN Trusts Central School, Kollam (10th Grade)",
             "startYear": "1998",
             "endYear": "2008",
             "graduationYear": "2008",
             "marksWithUnit": "77 %",
+            "subjects":"Science Major"
         },
     ]
 
