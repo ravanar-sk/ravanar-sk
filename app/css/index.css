@@ -104,7 +104,7 @@ animation-duration: 300ms;
 }
 
 .details-container {
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 100vh;
     padding-left: 5%;
     padding-right: 5%;
@@ -126,14 +126,6 @@ animation-duration: 300ms;
     margin-top: 50px;
 }
 
-#hobbies {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
 #education-graduation {
     display: flex;
     flex-direction: column;
@@ -147,13 +139,7 @@ animation-duration: 300ms;
     margin-left: 2vw;
 }
 
-.main-heading {
-    color: #000000CC;
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-}
+
 
 .education-sub-heading {
     color: #00000099;
@@ -174,15 +160,6 @@ animation-duration: 300ms;
 }
 
 .projects-text {
-    font-weight: 400;
-}
-
-.hobbies-title {
-    color: #00000099;
-}
-
-.hobbies-description {
-    color: #00000099;
     font-weight: 400;
 }
 

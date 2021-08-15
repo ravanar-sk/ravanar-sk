@@ -1,0 +1,91 @@
+#work-container {
+    padding-top: 100px;
+    margin-bottom: 100px; /* To add some space to end of screen */
+}
+
+/* Wordk details */
+
+.workdetails-item-root {
+    display: flex;
+    flex-direction: row;
+}
+
+.workdetails-item-duration-root {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.workdetails-item-duration-year {
+    color: white;
+    margin: 0;
+    text-align: end;
+}
+
+.workdetails-item-vertical-separator {
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: radial-gradient(white, transparent);
+}
+
+.workdetails-item-details-root {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.workdetails-item-organization-name {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.workdetails-item-position {
+    color: white;
+    align-self: flex-start;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+.workdetails-item-skills {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.workdetails-item-description {
+    color: white;
+    margin-top: 10px;
+    align-self: flex-start;
+    overflow: hidden;
+    font-size: small;
+    opacity: 0.25;
+}
+
+/* Separator */
+
+.workdetails-separator-root {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.workdetails-separator-offset-view {
+    width: 100px;
+}
+
+.workdetails-separator-vertical {
+    flex: 1;
+    height: 1px;
+    /* background: linear-gradient(to right, white, transparent); */
+    /* background: linear-gradient(to right, transparent, #FFFFFF); */
+}
