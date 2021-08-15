@@ -1,129 +1,74 @@
-.education-separator {
-    background-color: wheat;
-    height: 1px;
-    opacity: 0.3;
-}
-
-.education-details-container {
-    margin-left: 30px;
-}
-
-.education-text-content {
-    color: white;
-}
-
-/******************************/
-
 #education-container {
     padding-top: 100px;
 }
 
-.education-item-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+/* Education Detail */
 
-.education-item-main-container {
+.education-item-root {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    /* position: relative; */
 }
 
 .education-item-graduation-year {
+    width: 100px;
     color: white;
-    flex: 0.15;
-    text-align: right;
     margin: 0;
-    align-self: center;
+    text-align: end;
 }
 
-.education-item-main-title {
+.education-item-vertical-separator {
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: radial-gradient(white, transparent);
+}
+
+.education-item-education-details-root {
+    flex: 1;
+    flex-direction: column;
+}
+
+.education-item-institution-name {
     color: white;
     flex: 1;
     margin: 0;
     align-self: center;
 }
 
-.education-item-circle-indicator-container {
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.education-item-course-name {
+    color: white;
+    flex: 1;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0.7;
 }
 
-.education-item-circle-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    z-index: 1;
-    background-color: white;
-}
-
-.education-item-circle-bg-line {
-    position: absolute;
-    width: 1px;
-    z-index: 0;
-    background-color: white;
+.education-item-marks {
+    color: white;
+    flex: 1;
+    margin: 0;
+    margin-top: 10px;
     opacity: 0.5;
 }
 
-.education-item-circle-bg-line-top-aligned {
-    height: 50%;
-    top: 0;
-}
+/* Separator */
 
-.education-item-circle-bg-line-bottom-aligned {
-    height: 50%;
-    bottom: 0;
-}
-
-.education-item-circle-bg-line-full-height {
-    height: 100%;
-    bottom: 0;
-    top: 0;
-}
-
-.education-item-sub-container {
+.education-separator-root {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-}
-
-.education-item-bg-line-container {
-    width: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.education-item-bg-line {
-    width: 1px;
-    height: 100%;
-    background-color: white;
-    opacity: 0.5;
     position: relative;
-}
-
-.education-item-sub-title {
-    color: white;
-    opacity: 0.5;
-    flex: 1;
-    margin: 0;
-    align-self: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.education-item-sub-title-with-bottom-margin {
-    color: white;
-    opacity: 0.5;
+.education-separator-offset-view {
+    width: 100px;
+}
+
+.education-separator-vertical {
     flex: 1;
-    margin: 0;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-h2, h4 {
-    white-space: pre;
+    height: 1px;
+    /* background: linear-gradient(to right, white, transparent); */
+    background: linear-gradient(to right, transparent, #FFFFFF);
 }

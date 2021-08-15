@@ -11,98 +11,74 @@ function addingEducationData() {
     const educationMainContainer = document.getElementById('education-container')
 
     const arrayEducationElements = userData.education.map((educationData, index) => {
-
-        if (index == 0) {
-            return createEducationElement(educationData, true, false)
-        } else if (index == (userData.education.length - 1)) {
-            return createEducationElement(educationData, false, true)
-        } else {
-            return createEducationElement(educationData)
-        }
-
+        return createEducationItem(educationData)
     })
 
     for (let index = 0; index < arrayEducationElements.length; index++) {
         let educationElement = arrayEducationElements[index]
         educationMainContainer.appendChild(educationElement)
+
+        if ((arrayEducationElements.length > 1) &&
+            (index != (arrayEducationElements.length - 1))) {
+            let horizontalSeparator = createSeparatorElement()
+            educationMainContainer.appendChild(horizontalSeparator)
+        }
     }
 }
 
-function createEducationElement(educationData, isFirst = false, isLast = false) {
+function createEducationItem(data) {
+    const rootView = document.createElement('div')
+    rootView.className = "education-item-root"
 
-    const educationItemContainer = document.createElement('div')
-    educationItemContainer.className = "education-item-container"
+    const header2_GraduationYear = document.createElement('h2')
+    header2_GraduationYear.className = "education-item-graduation-year"
+    header2_GraduationYear.innerText = `${data.graduationYear}`
 
-    const educationItemMainContainer = document.createElement('div')
-    educationItemMainContainer.className = "education-item-main-container"
+    const view_verticalSeparator = document.createElement('div')
+    view_verticalSeparator.className = "education-item-vertical-separator"
 
-    const educationItemGraduationYear = document.createElement('h4')
-    educationItemGraduationYear.className = "education-item-graduation-year"
+    const view_educationDetailsRoot = document.createElement('div')
+    view_educationDetailsRoot.className = "education-item-education-details-root"
 
-    const educationItemMainTitle = document.createElement('h2')
-    educationItemMainTitle.className = "education-item-main-title"
+    const header2_InstitutionName = document.createElement('h2')
+    header2_InstitutionName.className = "education-item-institution-name"
+    header2_InstitutionName.innerText = `${data.institutionName} (${data.university})`
 
-    const educationItemCircleIndicatorContainer = document.createElement('div')
-    educationItemCircleIndicatorContainer.className = "education-item-circle-indicator-container"
+    const header3_CourseName = document.createElement('h3')
+    header3_CourseName.className = "education-item-course-name"
+    header3_CourseName.innerText = `${data.subjects}`
 
-    const educationItemCircleIndicator = document.createElement('div')
-    educationItemCircleIndicator.className = "education-item-circle-indicator"
+    const header4_Marks = document.createElement('h4')
+    header4_Marks.className = "education-item-marks"
+    header4_Marks.innerText = `${data.marksWithUnit}`
 
-    const educationItemCircleBGLine = document.createElement('div')
-    if (isFirst) {
-        educationItemCircleBGLine.className = "education-item-circle-bg-line education-item-circle-bg-line-bottom-aligned"
-    } else if (isLast) {
-        educationItemCircleBGLine.className = "education-item-circle-bg-line education-item-circle-bg-line-top-aligned"
-    } else {
-        educationItemCircleBGLine.className = "education-item-circle-bg-line education-item-circle-bg-line-full-height"
-    }
-
-
-    educationItemMainContainer.appendChild(educationItemGraduationYear)
-    educationItemMainContainer.appendChild(educationItemCircleIndicatorContainer)
-    educationItemMainContainer.appendChild(educationItemMainTitle)
-
-    educationItemCircleIndicatorContainer.appendChild(educationItemCircleBGLine)
-    educationItemCircleIndicatorContainer.appendChild(educationItemCircleIndicator)
-
-    educationItemContainer.appendChild(educationItemMainContainer)
-
-    educationItemGraduationYear.innerText = educationData.graduationYear
-    educationItemMainTitle.innerText = educationData.institutionName
+    view_educationDetailsRoot.appendChild(header2_InstitutionName)
+    view_educationDetailsRoot.appendChild(header3_CourseName)
+    view_educationDetailsRoot.appendChild(header4_Marks)
 
 
 
-    const educationItemSubContainer = document.createElement('div')
-    educationItemSubContainer.className = "education-item-sub-container"
+    rootView.appendChild(header2_GraduationYear)
+    rootView.appendChild(view_verticalSeparator)
+    rootView.appendChild(view_educationDetailsRoot)
 
-    const educationItemBGLineContainer = document.createElement('div')
-    educationItemBGLineContainer.className = "education-item-bg-line-container"
 
-    const educationItemBGLine = document.createElement('div')
-    educationItemBGLine.className = "education-item-bg-line"
+    return rootView
+}
 
-    const educationItemGraduationYearDummy = document.createElement('h4')
-    educationItemGraduationYearDummy.className = "education-item-graduation-year"
+function createSeparatorElement() {
 
-    const educationItemSubTitle = document.createElement('h4')
+    const rootView = document.createElement('div')
+    rootView.className = "education-separator-root"
 
-    if (isLast) {
-        educationItemSubTitle.className = "education-item-sub-title"
-    } else {
-        educationItemSubTitle.className = "education-item-sub-title-with-bottom-margin"
-    }
+    const offsetView = document.createElement('div')
+    offsetView.className = "education-separator-offset-view"
 
-    educationItemSubContainer.appendChild(educationItemGraduationYearDummy)
-    educationItemSubContainer.appendChild(educationItemBGLineContainer)
-    educationItemSubContainer.appendChild(educationItemSubTitle)
+    const separatorView = document.createElement('div')
+    separatorView.className = "education-separator-vertical"
 
-    if (!isLast) {
-        educationItemBGLineContainer.appendChild(educationItemBGLine)
-    }
+    rootView.appendChild(offsetView)
+    rootView.appendChild(separatorView)
 
-    educationItemContainer.appendChild(educationItemSubContainer)
-
-    educationItemSubTitle.innerText = `${educationData.university}  |  ${educationData.marksWithUnit}  |  ${educationData.subjects}`
-
-    return educationItemContainer
+    return rootView
 }
