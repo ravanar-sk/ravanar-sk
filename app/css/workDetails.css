@@ -1,4 +1,6 @@
 #work-container {
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 100px;
     margin-bottom: 100px; /* To add some space to end of screen */
 }
