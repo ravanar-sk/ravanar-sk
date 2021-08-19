@@ -15,12 +15,13 @@
 .workdetails-item-duration-root {
     width: 150px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    position: relative;
 }
 
 .workdetails-item-duration-year {
     color: white;
+    opacity: 0.5;
     margin: 0;
     text-align: end;
 }

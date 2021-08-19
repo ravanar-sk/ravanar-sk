@@ -15,6 +15,7 @@
 .education-item-graduation-year {
     width: 150px;
     color: white;
+    opacity: 0.5;
     margin: 0;
     text-align: end;
 }

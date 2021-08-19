@@ -34,15 +34,15 @@ function createWorkElement(data) {
     const div_durationRoot = document.createElement('div')
     div_durationRoot.className = "workdetails-item-duration-root"
 
-    const h2_startYear = document.createElement('h2')
+    const h2_startYear = document.createElement('h3')
     h2_startYear.className = "workdetails-item-duration-year"
     h2_startYear.innerText = `${data.startDate}`
 
-    const h2_separatorSymbol = document.createElement('h2')
+    const h2_separatorSymbol = document.createElement('h3')
     h2_separatorSymbol.className = "workdetails-item-duration-year"
     h2_separatorSymbol.innerText = "-"
 
-    const h2_endYear = document.createElement('h2')
+    const h2_endYear = document.createElement('h3')
     h2_endYear.className = "workdetails-item-duration-year"
     h2_endYear.innerText = `${data.endDate}`
 

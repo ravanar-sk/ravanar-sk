@@ -30,7 +30,7 @@ function createEducationItem(data) {
     const rootView = document.createElement('div')
     rootView.className = "education-item-root"
 
-    const header2_GraduationYear = document.createElement('h2')
+    const header2_GraduationYear = document.createElement('h3')
     header2_GraduationYear.className = "education-item-graduation-year"
     header2_GraduationYear.innerText = `${data.graduationYear}`
 
