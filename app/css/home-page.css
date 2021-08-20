@@ -89,12 +89,15 @@
     color: #ADADAD;
     margin-top: 10px;
     margin-bottom: 10px;
+    /* margin-right: 10px; */
+    /* padding-right: 10px; */
     max-width: 100%;
     text-overflow:clip;
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    white-space: pre;
 
-    animation-name: home-page-about-me-width-animation;
+    /* animation-name: home-page-about-me-width-animation; */
     animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -114,5 +117,5 @@
 #home-page-about-me-vertical-line {
     display: flex; width: 1px;  
     background-color: white; 
-    margin-left: 10px;
+    margin-left: 0px;
 }
