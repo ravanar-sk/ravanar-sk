@@ -1,0 +1,138 @@
+#projects-container {
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#projects-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;   
+}
+
+.projects-grid-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+     display: flex;
+     position:  relative;
+}
+
+.projects-grid-item-bg-image {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+}
+
+.projects-grid-item-content-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(0deg, black, transparent);
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.projects-grid-title {
+    color: white; 
+    margin-bottom: 10px; 
+    margin-left: 10px;
+}
+
+.projects-tags-container {
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    flex-direction: column;
+    background: linear-gradient(black, transparent);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.0;
+    animation-duration: 300ms;
+    animation-name: animation-project-grid-item;
+}
+
+@keyframes animation-project-grid-item {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+
+.projects-tags-container:hover {
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    flex-direction: column;
+    background: linear-gradient(black, transparent);
+    align-items: center;
+    justify-content: center;
+    opacity: 1.0;
+    animation-duration: 300ms;
+    animation-name: animation-project-grid-item-active;
+}
+
+@keyframes animation-project-grid-item-active {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }    
+}
+
+
+.projects-tags-row {
+    height: 70px;
+    display: flex; 
+    align-items: center;
+}
+
+.projects-tags-item {
+    width: 50px;
+    height: 50px; 
+    object-fit: contain;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation-duration: 300ms;
+    animation-name: animation-project-grid-item-tag;
+}
+
+@keyframes animation-project-grid-item-tag {
+    from {
+        width: 65px;
+    height: 65px; 
+    }
+    to {
+        width: 50px;
+    height: 50px; 
+    }    
+}
+
+.projects-tags-item:hover {
+    width: 65px;
+    height: 65px; 
+    object-fit: contain;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation-duration: 300ms;
+    animation-name: animation-project-grid-item-tag-active;
+}
+
+@keyframes animation-project-grid-item-tag-active {
+    from {
+        width: 50px;
+    height: 50px; 
+    }
+    to {
+        width: 65px;
+    height: 65px; 
+    }    
+}

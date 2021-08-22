@@ -1,0 +1,80 @@
+#education-container {
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Education Detail */
+
+.education-item-root {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+}
+
+.education-item-graduation-year {
+    width: 150px;
+    color: white;
+    opacity: 0.5;
+    margin: 0;
+    text-align: end;
+}
+
+.education-item-vertical-separator {
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: radial-gradient(white, transparent);
+}
+
+.education-item-education-details-root {
+    flex: 1;
+    flex-direction: column;
+}
+
+.education-item-institution-name {
+    color: white;
+    flex: 1;
+    margin: 0;
+    align-self: center;
+}
+
+.education-item-course-name {
+    color: white;
+    flex: 1;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.education-item-marks {
+    color: white;
+    flex: 1;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+/* Separator */
+
+.education-separator-root {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.education-separator-offset-view {
+    width: 100px;
+}
+
+.education-separator-vertical {
+    flex: 1;
+    height: 1px;
+    /* background: linear-gradient(to right, white, transparent); */
+    /* background: linear-gradient(to right, transparent, #FFFFFF); */
+}

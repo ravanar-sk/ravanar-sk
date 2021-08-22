@@ -3,16 +3,242 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Saravana Kumar K R (RavaNar ~ Ghostly)</title>
-    <link rel="stylesheet" type="text/css" href="css/base-font-styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>.:Saravana Kumar K R (RavaNar ~ Ghostly)</title>
+    <link rel="stylesheet" type="text/css" href="./app/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/home-page.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/about-me-page.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/projects-page.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/education.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/workDetails.css">
+    <link rel="stylesheet" type="text/css" href="./app/css/commonStyles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./app/css/app-font.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:Italic">
 </head>
 
 <body>
-     <div id="app">
 
-     </div>
-     <script src="./bundle.js"></script>
+    <!-- Side Navigation -->
+    <div class="side-navigation-menu-container">
+
+        <div class="side-navigation-menu">
+
+            <h1 class="side-menu-item side-menu-title">INDIA</h1>
+            <a href="#home-container">
+                <h3 id="id_sidemenu_home" class="side-menu-item side-menu-sub-title">HOME</h3>
+            </a>
+
+            <a href="#about-me-container">
+                <h3 id="id_sidemenu_about"  class="side-menu-item side-menu-sub-title">ABOUT</h3>
+            </a>
+            <a href="#projects-container">
+                <h3 id="id_sidemenu_projects"  class="side-menu-item side-menu-sub-title">Projects</h3>
+            </a>
+            <a href="#education-container">
+                <h3 id="id_sidemenu_education"  class="side-menu-item side-menu-sub-title">Education</h3>
+            </a>
+            <a href="#work-container">
+                <h3 id="id_sidemenu_work"  class="side-menu-item side-menu-sub-title">Work</h3>
+            </a>
+            <!-- <a href="#hobbies-container">
+                <h3 class="side-menu-item side-menu-sub-title">Hobbies</h3>
+            </a> -->
+            <!-- <a href="#gallery-container">
+                <h3 class="side-menu-item side-menu-sub-title">Gallery</h3>
+            </a> -->
+
+        </div>
+
+    </div>
+
+    <!-- Page container -->
+
+    <div class="page-container">
+
+        <!-- Profile Container -->
+        <div id="home-container" class="details-container">
+
+            <div id="profile-image-container">
+                <div id="profile-image-bg-layer"></div>
+                <dic id="home-profile-image-clip-container">
+                    <img id="profile-image" src="./app/resources/images/pictures/imgProfilePicture.jpg" />
+                </dic>
+                <!-- <div id="profile-image-front-layer"></div> -->
+            </div>
+
+            <div id="home-page-about-mename-container">
+                <h3 id="home-page-name">SARAVANA KUMAR K R</h3>
+                <div style="display: flex;">
+                    <p id="home-page-about-me">iOS Developer | React Native Developer | Android Hobbyist | Freelancer
+                    </p>
+                    <div id="home-page-about-me-vertical-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about-me-container">
+
+            <div id="about-me-image-list-container">
+                <div class="about-me-image-container">
+                    <img class="about-me-image-list-item"
+                        src="./app/resources/images/pictures/imgSubProfilePicture_02.jpg" />
+                    <div class="about-me-image-overlay-container">
+                        <!-- <h2 class="about-me-image-overlay-text">Who I was!</h2> -->
+                    </div>
+                </div>
+                <div class="about-me-image-container" style="margin-left: 10px; margin-right: 10px;">
+                    <img class="about-me-image-list-item"
+                        src="./app/resources/images/pictures/imgSubProfilePicture_01.jpg" />
+                    <div class="about-me-image-overlay-container">
+                        <!-- <h2 class="about-me-image-overlay-text">In a confused state?</h2> -->
+                    </div>
+                </div>
+                <div class="about-me-image-container">
+                    <img class="about-me-image-list-item"
+                        src="./app/resources/images/pictures/imgSubProfilePicture_03.jpg" />
+                    <div class="about-me-image-overlay-container">
+                        <!-- <h2 class="about-me-image-overlay-text">What I am now.</h2> -->
+                    </div>
+                </div>
+            </div>
+
+            <dic style="display: flex; flex-direction: column;  width: 90%;">
+
+                <div style="display: flex; flex-direction: column; flex: 1;">
+                    <!-- <h1 id="about-me-name" style="color: white;">SARAVANA KUMAR K R</h1> -->
+                    <h3 id="about-me-description" style="color: white; opacity: 0.75;">
+                        Dummy
+                    </h3>
+                </div>
+
+                <div style="display: flex; flex-direction: column; flex: 1; ">
+                    <table>
+                        <tbody id="about-me-personal-details-table-body">
+                            <!-- All required data would be added dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </dic>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects-container">
+
+            <div id="projects-grid-layout">
+
+
+                <!-- <div class="projects-grid-item">
+                    <img class="projects-grid-item-bg-image"
+                        src="https://static.scientificamerican.com/sciam/cache/file/32472ED8-8A08-49F5-9A2AB70DA387E5B7_source.jpg?w=590&h=800&BC7D68E0-B303-4BF3-95BFF7B0071DC23D">
+                    <div class="projects-grid-item-content-container">
+                        <h1 style="color: white; margin-bottom: 10px; margin-left: 10px;">TEST</h1>
+                    </div>
+
+                    <div style="display: flex;
+                    position: absolute;
+                    width: 100%; 
+                    height: 100%;
+                    flex-direction: column;
+                    background: linear-gradient(black, transparent);
+                    align-items: center;
+                    justify-content: center;
+                    ">
+
+                    <div style="height: 70px; display: flex; align-items: center;">
+                        <a href="https://www.facebook.com/">
+                        <img src="https://raw.githubusercontent.com/ravanar-sk/MyProfile-assets/main/iconApple.png" style="width: 50px; height: 50px; object-fit: contain; margin-left: 5px; margin-right: 5px;"/>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="https://raw.githubusercontent.com/ravanar-sk/MyProfile-assets/main/iconAndroid.png" style="width: 50px; height: 50px; object-fit: contain; margin-left: 5px; margin-right: 5px;"/>
+                    </a>
+                        <a href="https://www.facebook.com/">
+                        <img src="https://raw.githubusercontent.com/ravanar-sk/MyProfile-assets/181cc1027485d870fbbef196955c1af9d37ca09b/iconReactNative.svg" style="width: 50px; height: 50px; object-fit: contain; margin-left: 5px; margin-right: 5px;"/>
+                    </a>
+                        <a href="https://www.facebook.com/">
+                        <img src="https://raw.githubusercontent.com/ravanar-sk/MyProfile-assets/main/iconWeb.png" style="width: 50px; height: 50px; object-fit: contain; margin-left: 5px; margin-right: 5px;"/>
+                    </a>
+                    </div>
+
+                    </div>
+                </div> -->
+
+
+            </div>
+        </div>
+
+        <!-- education -->
+        <div id="education-container" >
+
+            <!-- <div style="display: flex; flex-direction: row; position: relative; background-color: blue;">
+
+                <h2 style="width: 100px;color: white;  text-align: end; margin: 0; background-color: chocolate;">2014</h2>
+                <div style="width: 1px; margin-left: 10px; margin-right: 10px; background: radial-gradient(white, transparent);"></div>
+                <div style="flex: 1;flex-direction: column;">
+                    <h2 style="color: white; flex: 1;margin: 0; align-self: center;">UKF College of Engineering (Kerala University)</h2>
+                    <h3 style="color: white; flex: 1; margin: 0; margin-top: 10px; opacity: 0.7;">B.Tech - Computer Science</h3>
+                    <h4 style="color: white; flex: 1; margin: 0; margin-top: 10px; opacity: 0.5;">6.5 CGPA</h4>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; position: relative; margin-top: 10px; margin-bottom: 10px; ">
+                <div style="width: 100px;"></div>
+                <div style="flex: 1; height: 1px; background: linear-gradient(to right, white, transparent);"></div>
+            </div> -->
+
+
+        </div>
+
+        <!-- work -->
+        <div id="work-container" >
+
+
+            <!-- <div style="display: flex; flex-direction: row; ">
+                <div style=" width: 150px; display: flex; flex-direction: column;   position: relative;">
+                    <h2 style="color: white;  margin: 0;  text-align: end;">2014</h2>
+                    <h2 style="color: white;  margin: 0;  text-align: end;">-</h2>
+                    <h2 style="color: white;  margin: 0;  text-align: end;">2018</h2>
+                </div>
+                <div style="width: 1px; margin-left: 10px; margin-right: 10px; background: radial-gradient(white, transparent);"></div>
+                <div style="display: flex; flex: 1;flex-direction: column; ">
+                    <div style="color: white;  align-self: flex-start;  overflow: hidden; font-size: x-large;">UKF
+                        College of Engineering (Kerala University) asdkjahdkjahkjdhaskjd
+                        hajskhdkjhakjhfjkadhfjkhsdjfhksdfjhkh iuufhgiu f gjh gkhd gh sdfkjsdh fkjhs dkfjhsdfh </div>
+                    <h3 style="color: white;  margin: 0; margin-top: 10px; opacity: 0.7;">B.Tech - Computer Science</h3>
+                    <h4 style="color: white;  margin: 0; margin-top: 10px; opacity: 0.5;">6.5 CGPA</h4>
+
+                    <div style="color: white; margin-top: 10px;; align-self: flex-start;  overflow: hidden; font-size: small;opacity: 0.25;">UKF
+                        College of Engineering (Kerala University) asdkjahdkjahkjdhaskjd
+                        hajskhdkjhakjhfjkadhfjkhsdjfhksdfjhkh iuufhgiu f gjh gkhd gh sdfkjsdh fkjhs dkfjhsdfh </div>
+                </div>
+            </div>
+
+            <div
+                style="display: flex; flex-direction: row; position: relative; margin-top: 10px; margin-bottom: 10px; ">
+                <div style="width: 100px;"></div>
+                <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, white);"></div>
+            </div> -->
+
+
+        </div>
+
+        <!-- Hobbies -->
+        <!-- <div id="hobbies-container" class="details-container" style="background-color: tomato;"></div> -->
+
+        <!-- gallery -->
+        <!-- <div id="gallery-container" class="details-container" style="background-color: purple;"></div> -->
+
+    </div>
+    <script type="text/javascript" src="./app/resources/json/user-data.js"></script>
+    <script type="text/javascript" src="./app/resources/json/projects.js"></script>
+    <script type="text/javascript" src="./app/resources/json/work-data.js"></script>
+    <script src="./app/scripts/index.js"></script>
+    <script src="./app/scripts/home-page.js"></script>
+    <script src="./app/scripts/about-me-page.js"></script>
+    <script src="./app/scripts/projects-page.js"></script>
+    <script src="./app/scripts/education.js"></script>
+    <script src="./app/scripts/workDetail.js"></script>
 </body>
 
 </html>
