@@ -31,8 +31,8 @@ function addingPersonalData() {
     // const rowWebsite = createElementWith(userData.website.title,userData.website.value)
     // personalDetailsTableBody.appendChild(rowWebsite)
 
-    let rowWebsite = createWebsiteRow()
-    personalDetailsTableBody.appendChild(rowWebsite)    
+    // let rowWebsite = createWebsiteRow()
+    // personalDetailsTableBody.appendChild(rowWebsite)    
 }
 
 

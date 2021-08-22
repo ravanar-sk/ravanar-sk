@@ -42,11 +42,11 @@ function createEducationItem(data) {
 
     const header2_InstitutionName = document.createElement('h2')
     header2_InstitutionName.className = "education-item-institution-name"
-    header2_InstitutionName.innerText = `${data.institutionName} (${data.university})`
+    header2_InstitutionName.innerText = `${data.course} - ${data.subjects}`
 
     const header3_CourseName = document.createElement('h3')
     header3_CourseName.className = "education-item-course-name"
-    header3_CourseName.innerText = `${data.subjects}`
+    header3_CourseName.innerText = `${data.institutionName} (${data.university})`
 
     const header4_Marks = document.createElement('h4')
     header4_Marks.className = "education-item-marks"

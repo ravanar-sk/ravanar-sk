@@ -11,7 +11,7 @@ const userData = {
         "Web Hobbyist",
         "Freelancer"
     ],
-    about_me: "I'm an enthusiastic and passionate mobile application developer. I build apps primarily for iOS platform using Xcode and if required would also build apps using React Native cross platform framework. I am also capable of building Android and web apps, however I do it as a hobby.",
+    about_me: `I'm an enthusiastic and passionate mobile application developer. I build apps primarily for iOS platform using Xcode and if required would also build apps using React Native cross platform framework. I also build Android and web apps, as a hobby.`,
     birthday: {
         "title": "Birthday",
         "value": "05-12-1992"
@@ -83,25 +83,28 @@ const userData = {
             "endYear": "2014",
             "graduationYear": "2014",
             "marksWithUnit": "6.5 CGPA",
-            "subjects":"Computer Science Engineering"
+            "subjects":"Computer Science Engineering",
+            course:"B.Tech"
         },
         {
             "university": "CBSE",
-            "institutionName": "SN Trusts Central School, Kollam (12th Grade)",
+            "institutionName": "SN Trusts Central School, Kollam",
             "startYear": "1998",
             "endYear": "2010",
             "graduationYear": "2010",
             "marksWithUnit": "67 %",
-            "subjects":"Maths , ComputerScience"
+            "subjects":"Maths , ComputerScience",
+            course:"AISSCE"
         },
         {
             "university": "CBSE",
-            "institutionName": "SN Trusts Central School, Kollam (10th Grade)",
+            "institutionName": "SN Trusts Central School, Kollam",
             "startYear": "1998",
             "endYear": "2008",
             "graduationYear": "2008",
             "marksWithUnit": "77 %",
-            "subjects":"Science Major"
+            "subjects":"Science Major",
+            course:"AISSE"
         },
     ]
 

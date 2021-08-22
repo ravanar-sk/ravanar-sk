@@ -89,12 +89,6 @@ animation-duration: 300ms;
     }
 }
 
-.side-menu-item-icon {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 .page-container {
     width: 71%;
     display: flex;
@@ -108,59 +102,6 @@ animation-duration: 300ms;
     min-height: 100vh;
     padding-left: 5%;
     padding-right: 5%;
-}
-
-#education-details {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
-#work-details {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 50px;
-}
-
-#education-graduation {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.projects-sub-container-right {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2vw;
-}
-
-
-
-.education-sub-heading {
-    color: #00000099;
-}
-
-.education-description {
-    color: #00000099;
-    font-weight: 400;
-}
-
-.work-details-sub-heading {
-    color: #00000099;
-}
-
-.work-details-duration {
-    color: #00000099;
-    font-style: italic;
-}
-
-.projects-text {
-    font-weight: 400;
 }
 
 a:link,
